@@ -2,6 +2,18 @@ import SkinCard from '@/components/Skin';
 import { fetchChampionDetail } from '@/utils/serverApi';
 import Image from 'next/image';
 
+type Props = {
+  params: {
+    id: string;
+  };
+};
+export function generateMetadata({ params }: Props) {
+  return {
+    title: params.id,
+    description: `Detail 페이지 : ${params.id}`
+  };
+}
+
 const Champions = async ({ params }: { params: { id: string } }) => {
   const champion = await fetchChampionDetail(params.id);
   const championInfo = champion.data[params.id];
