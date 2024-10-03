@@ -6,7 +6,7 @@ const Champions = async ({ params }: { params: { id: string } }) => {
   const champion = await fetchChampionDetail(params.id);
   const championInfo = champion.data[params.id];
 
-  // console.log(championInfo);
+  console.log(championInfo);
 
   return (
     <>
@@ -15,7 +15,7 @@ const Champions = async ({ params }: { params: { id: string } }) => {
         <Image
           className="min-w-full min-h-full object-cover"
           src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championInfo.id}_0.jpg`}
-          alt="Picture of the author"
+          alt={championInfo.id}
           width={500}
           height={500}
         />
@@ -24,7 +24,7 @@ const Champions = async ({ params }: { params: { id: string } }) => {
         <div className="inner flex items-start">
           <Image
             src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championInfo.id}_0.jpg`}
-            alt="Picture of the author"
+            alt={championInfo.id}
             width={500}
             height={500}
             unoptimized
@@ -57,7 +57,7 @@ const Champions = async ({ params }: { params: { id: string } }) => {
                   <li key={spell.id} className="skill group relative w-1/5">
                     <Image
                       src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/spell/${spell.image.full}`}
-                      alt="Picture of the author"
+                      alt={spell.name}
                       width={500}
                       height={500}
                       unoptimized
@@ -81,7 +81,7 @@ const Champions = async ({ params }: { params: { id: string } }) => {
 
           <div className="flex flex-wrap">
             {championInfo.skins.map((skin) => {
-              return <SkinCard key={skin.id} skin={skin} championId={championInfo.id} />;
+              return <SkinCard key={skin.id} skin={skin} name={championInfo.name} championId={championInfo.id} />;
             })}
           </div>
         </div>
