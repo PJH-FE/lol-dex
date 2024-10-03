@@ -1,6 +1,7 @@
 'use server';
 
 import { Champions } from '@/types/Champion';
+import { DetailData } from '@/types/ChampionDetail';
 import { ItemList } from '@/types/Item';
 
 // 버전
@@ -29,7 +30,7 @@ export async function fetchChampionDetail(id: string) {
   const version = await fetchLatestVersion();
 
   const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version[0]}/data/ko_KR/champion/${id}.json`);
-  const data: Champions = await res.json();
+  const data: DetailData = await res.json();
 
   return data;
 }

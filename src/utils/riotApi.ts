@@ -10,7 +10,7 @@ export const getChampionRotation = async () => {
   const rotationIds = result.data.freeChampionIds;
 
   const rotation: Champion[] = Object.values(champions).filter((champion) =>
-    rotationIds.includes(Number(champion.key))
+    rotationIds?.includes(Number(champion.key))
   );
 
   return rotation;

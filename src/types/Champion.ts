@@ -11,16 +11,13 @@ export type Champion = {
   key: string;
   name: string;
   title: string;
+  lore?: string;
   blurb: string;
   info: Info;
   image: Image;
   tags: Tag[];
   partype: string;
   stats: { [key: string]: number };
-};
-
-export type ChampionProps = {
-  champion: Champion;
 };
 
 export interface Image {

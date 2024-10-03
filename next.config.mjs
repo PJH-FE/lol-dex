@@ -9,6 +9,7 @@ const nextConfig = {
         pathname: '/**'
       }
     ],
+    domains: ['ddragon.leagueoflegends.com'],
     formats: ['image/avif', 'image/webp']
   }
 };
