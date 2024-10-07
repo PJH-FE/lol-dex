@@ -6,7 +6,7 @@ const Champions = async () => {
   const champions = Object.values(fetchChampions.data.data);
 
   return (
-    <>
+    <div className="md:px-0 px-4">
       <div>Champion</div>
 
       <div className="flex gap-6 flex-wrap">
@@ -14,7 +14,7 @@ const Champions = async () => {
           return <Card key={champion.key} champion={champion} />;
         })}
       </div>
-    </>
+    </div>
   );
 };
 export default Champions;

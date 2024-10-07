@@ -9,7 +9,7 @@ interface SkinProps {
 
 const SkinCard: React.FC<SkinProps> = ({ skin, name, championId }) => {
   return (
-    <div className="w-1/5">
+    <>
       <Image
         src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_${skin.num}.jpg`}
         alt={skin.name}
@@ -17,15 +17,9 @@ const SkinCard: React.FC<SkinProps> = ({ skin, name, championId }) => {
         height={500}
         unoptimized
       />
-      <Image
-        src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_${skin.num}.jpg`}
-        alt={skin.name}
-        width={500}
-        height={500}
-        unoptimized
-      />
+
       <div>{skin.name === 'default' ? name : skin.name}</div>
-    </div>
+    </>
   );
 };
 export default SkinCard;
