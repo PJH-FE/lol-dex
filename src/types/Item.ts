@@ -24,15 +24,12 @@ export interface Basic {
   stacks: number;
   depth: number;
   consumeOnFull: boolean;
-  from: any[];
-  into: any[];
   specialRecipe: number;
   inStore: boolean;
   hideFromAll: boolean;
   requiredChampion: string;
   requiredAlly: string;
   stats: { [key: string]: number };
-  tags: any[];
   maps: { [key: string]: boolean };
 }
 
