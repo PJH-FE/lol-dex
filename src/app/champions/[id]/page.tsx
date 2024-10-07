@@ -1,3 +1,4 @@
+import SkinSwiper from '@/components/SkinSwiper';
 import { fetchChampionDetail } from '@/utils/serverApi';
 import Image from 'next/image';
 
@@ -114,6 +115,12 @@ const Champions = async ({ params }: { params: { id: string } }) => {
                 );
               })}
             </ul>
+
+            <div className="skins mt-6">
+              <h3 className="font-bold text-xl mb-4">Skins</h3>
+
+              <SkinSwiper championInfo={championInfo} />
+            </div>
           </div>
         </div>
       </div>
