@@ -22,7 +22,6 @@ export interface ChampionDetail {
   stats: { [key: string]: number };
   spells: Spell[];
   passive: Passive;
-  recommended: any[];
 }
 
 export type ChampionProps = {
@@ -70,10 +69,8 @@ export interface Spell {
   cooldownBurn: string;
   cost: number[];
   costBurn: string;
-  datavalues: Datavalues;
   effect: Array<number[] | null>;
   effectBurn: Array<null | string>;
-  vars: any[];
   costType: string;
   maxammo: string;
   range: number[];
@@ -81,8 +78,6 @@ export interface Spell {
   image: Image;
   resource: string;
 }
-
-export interface Datavalues {}
 
 export interface Leveltip {
   label: string[];
