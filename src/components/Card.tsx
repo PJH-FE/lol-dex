@@ -8,7 +8,10 @@ type ChampionProps = {
 
 const Card: React.FC<ChampionProps> = ({ champion }) => {
   return (
-    <Link href={`/champions/${champion.id}`} className="w-[calc(25%-18px)] md:w-[calc((100%/7)-(144px/7))]">
+    <Link
+      href="/champions/[id]"
+      as={`/champions/${champion.id}`}
+      className="w-[calc(25%-18px)] md:w-[calc((100%/7)-(144px/7))]">
       <Image
         src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/champion/${champion.image.full}`}
         alt={champion.name}
