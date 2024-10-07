@@ -5,11 +5,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'fakestoreapi.com',
+        hostname: 'ddragon.leagueoflegends.com',
         pathname: '/**'
       }
     ],
-    domains: ['ddragon.leagueoflegends.com'],
     formats: ['image/avif', 'image/webp']
   }
 };
