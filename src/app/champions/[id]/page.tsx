@@ -1,4 +1,3 @@
-import SkinSwiper from '@/components/SkinSwiper';
 import { fetchChampionDetail } from '@/utils/serverApi';
 import Image from 'next/image';
 
