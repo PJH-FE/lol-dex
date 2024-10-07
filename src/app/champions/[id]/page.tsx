@@ -15,8 +15,8 @@ export function generateMetadata({ params }: Props) {
 }
 
 const Champions = async ({ params }: { params: { id: string } }) => {
-  const champion = await fetchChampionDetail(params.id);
-  const championInfo = champion.data[params.id];
+  const champion = await fetchChampionDetail(params?.id);
+  const championInfo = champion.data[params?.id];
 
   return (
     <div className="px-4 md:px-0">
