@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💫 LoL Dex
+현재 롤 버전의 챔피언정보와 아이템정보를 확인하실 수 있습니다.
+<br/>
+<br/>
 
-## Getting Started
+# 🌟 배포 링크
 
-First, run the development server:
+[LoL Dex](https://lol-dex-wine.vercel.app/)
+<br/>
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 📚 프로젝트 구조
+
+<details>
+<summary>접었다 펴기</summary>
+
 ```
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂api
+ ┃ ┃ ┗ 📂rotation
+ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┣ 📂champions
+ ┃ ┃ ┣ 📂[id]
+ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂fonts
+ ┃ ┃ ┣ 📜GeistMonoVF.woff
+ ┃ ┃ ┗ 📜GeistVF.woff
+ ┃ ┣ 📂items
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂rotation
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📜favicon.ico
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂assets
+ ┃ ┣ 📜logo.png
+ ┃ ┣ 📜logo.svg
+ ┃ ┗ 📜main_item.jpg
+ ┣ 📂components
+ ┃ ┣ 📜Card.tsx
+ ┃ ┣ 📜Header.tsx
+ ┃ ┣ 📜Item.tsx
+ ┃ ┣ 📜Skin.tsx
+ ┃ ┗ 📜SkinSwiper.tsx
+ ┣ 📂types
+ ┃ ┣ 📜Champion.ts
+ ┃ ┣ 📜ChampionDetail.ts
+ ┃ ┣ 📜ChampionRotation.ts
+ ┃ ┗ 📜Item.ts
+ ┗ 📂utils
+ ┃ ┣ 📜getRandomChampion.ts
+ ┃ ┣ 📜riotApi.ts
+ ┃ ┗ 📜serverApi.ts
+```
+</details>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br/><br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# ⚒️ 개발 환경
 
-## Learn More
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+<br/>
+<br/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 📆프로젝트 기간
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+24.09.24 ~ 24.10.07
 
-## Deploy on Vercel
+<br/>
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# 🎢 개발 과정
+
+[개인프로젝트 - LOL Dex(1)](https://velog.io/@sjrmd781/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-LOL-Dex1)
+
+[개인프로젝트 - LOL Dex(2)](https://velog.io/@sjrmd781/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-LOL-Dex2)
+
+[개인프로젝트 - LOL Dex(3)](https://velog.io/@sjrmd781/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-LOL-Dex3)
+
+<br/>
+<br/>
+<br/>
+
+# 💭 회고
+
+
+**Good**👍  
+처음으로 Nextjs 와 typescript로 프로젝트를 생성해 볼 수 있어서 좋았습니다.
+
+**Bad**🥲 
+좀 더 다양한 기능들을 도전해 보지 못한점이 아쉽습니다.
